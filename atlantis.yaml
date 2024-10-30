@@ -1,2 +1,26 @@
-projects: []
+projects:
+- autoplan:
+    enabled: true
+    when_modified:
+    - '*.tf'
+    - '*.tfvars'
+  dir: ./aws/ec2/env/test1
+  name: test1
+  workspace: default
+- autoplan:
+    enabled: true
+    when_modified:
+    - '*.tf'
+    - '*.tfvars'
+  dir: ./aws/iam/env/test1
+  name: test1
+  workspace: default
+- autoplan:
+    enabled: true
+    when_modified:
+    - '*.tf'
+    - '*.tfvars'
+  dir: ./aws/iam/env/test2
+  name: test2
+  workspace: default
 version: 3
